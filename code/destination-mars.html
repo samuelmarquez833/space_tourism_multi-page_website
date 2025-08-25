@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/pages/destination.css"> 
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <header class="main__header">
+      <img src="./assets/shared/logo.svg" alt="Space Tourism Logo">
+
+      <button class="main__hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <img src="./assets/shared/icon-hamburger.svg" alt="Menu">
+      </button>
+
+      <nav class="main__nav">
+          <ul class="main__nav-list">
+              <li class="main__nav-item"><a href="index.html" class="main__nav-link">00 Home</a></li>
+              <li class="main__nav-item"><a href="destination-moon.html" class="main__nav-link selected">01 Destination</a></li>
+              <li class="main__nav-item"><a href="crew-douglas.html" class="main__nav-link">02 Crew</a></li>
+              <li class="main__nav-item"><a href="technology-launch.html" class="main__nav-link">03 Technology</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div id="flying"><p> <span id="flying_number">01</span>  PICK YOUR DESTINATION</p></div>
+
+
+  <main class="destination__main">
+    <section class="destination__planet">
+      <img src="./assets/destination/image-mars.png" class="destination__planet-image" alt="">
+    </section>
+
+
+    <section class="destination__info">
+      <ul class="destination__info-list">
+        <li> <a href="destination-moon.html">Moon</a></li>
+        <li> <a href="destination-mars.html" class="selected">Mars</a></li>
+        <li> <a href="destination-europa.html">Europa</a></li>
+        <li> <a href="destination-titan.html">Titan</a></li>
+      </ul>
+
+      <h1 class="destination__info-title">Mars</h1>
+      <p class="destination__info-text">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+      <div id="line"></div>
+
+      <div class="destination__info-details">
+        <div id="first-destination__info-detail" class="destination__info-detail" >
+          <p class="destination__info-aspect">Avg. distance</p>
+          <p class="destination__info-detail-value">225 MIL. KM</p>
+        </div>
+        <div class="destination__info-detail">
+          <p class="destination__info-aspect">Est travel time</p>
+          <p class="destination__info-detail-value">9 MONTHS</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+</html>

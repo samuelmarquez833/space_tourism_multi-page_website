@@ -1,0 +1,548 @@
+
+@import url('../base/reset.css');
+@import url('../base/base.css');
+
+
+@import url('../components/headerOrNav.css');
+
+
+
+body {
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.destination__planet-image{
+    width: 14rem;
+}
+
+
+.destination__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 12vh 0 0 0;
+}
+
+
+
+
+.destination__info{
+    margin: 2rem 0 0 0;
+    width: 75vw;
+}
+
+/*LA SEPARACAO ENTRE  CADA COSIDOT DE TEXTO*/
+.destination__info-list, .destination__info-title, .destination__info-text, #line{
+    margin: 3.5vh 0;
+}
+
+
+
+/***LISTA DE PLANETALLIES*/
+.destination__info-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3.2rem;
+}
+
+
+/*** DETALLIES*/
+.destination__info-details{
+    display: flex;
+    flex-direction: column;
+}
+
+#first-destination__info-detail{
+    margin: 0 0 2vh 0;
+}
+
+
+/******************************COLOES Y TAMAÑOS DE LOS TEXTOS*/
+.destination__info-title{
+    font-family: "Bellefair", serif;
+    font-weight:lighter;
+    font-size: 7.4rem;
+    color: var(--primary-color);
+}
+
+.destination__info-text{
+    line-height: 2.4rem;
+}
+
+.destination__info-text, .destination__info-list a, .destination__info-aspect{
+    font-family: "Barlow", serif;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+}
+
+.destination__info-detail-value{
+    font-family: "Bellefair", serif;
+    font-weight: lighter;
+    font-size: 2.4rem;
+    color: var(--primary-color);
+}
+
+.destination__info-list a {
+  text-decoration: none;
+}
+
+/*ELEMENTOS RANDOMS EXTRAS QEU SALIENRON DESPUES*/
+
+#line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-color);
+}
+
+#flying{
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+#flying p{
+    color: var(--primary-color);
+    font-family: "Barlow Condensed", serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+    body {
+        background-image: url('../../assets/destination/background-destination-tablet.jpg');
+    }
+
+    
+    .destination__planet-image{
+        width: 36vw;
+    }
+
+
+    /*ESTRCUTURA*/    
+    .destination__main{
+        margin: 8rem 0 0 0;
+    }
+
+    .destination__info{
+        width: 60vw;
+    }
+    
+
+
+/******************************************/
+
+
+    .destination__info-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5.6rem 0 1rem 0;
+        padding: 0 0 1rem 0;
+    }
+
+
+    .destination__info-title{
+        font-size: 7.2rem;
+    }
+
+    .destination__info-text{
+        font-size: 1.6rem;
+    }
+
+    .destination__info-text{
+        line-height: 1.6vw;
+    }
+
+
+
+
+    /***LISTA DE PLANETALLIES*/
+    .destination__info-list{
+        gap: 2.6vw;
+    }
+
+
+    
+    #first-destination__info-detail{
+        margin: 0 5vw 0 0;
+    }
+
+
+    #flying{
+        top: 12rem;
+        width: 40%;
+        margin: 0 0 0 9vw;
+        text-align: left;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+
+    body {
+        background-image: url('../../assets/destination/background-destination-desktop.jpg');
+        min-height: 100vh;         /* que ocupe toda la pantalla */
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .main__header {
+        flex-shrink: 0;
+    }
+
+
+
+
+    .destination__planet-image{
+        width: 28vw;
+    }
+
+
+    .destination__planet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
+        width: 60%;
+    }
+
+
+
+    
+    .destination__info-title{
+        font-size: 8.2vw;
+    }
+
+    .destination__info-text{
+        width: 34vw;
+    }
+
+    .destination__info-text, .destination__info-list a, .destination__info-aspect{
+        font-size: 1vw;
+    }
+
+    .destination__info-detail-value{
+        font-size: 1.8vw;
+    }
+
+
+
+
+    .destination__main{
+        margin: auto 0 12vh 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .destination__info{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .destination__info-list, .destination__info-title, .destination__info-text, #line{
+        margin: 1vh 0;
+    }
+
+
+    .destination__info-list{
+        justify-content: flex-start;
+    }
+
+    .destination__info-details{
+        justify-content: flex-start;    
+    }
+
+
+    .destination__info-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:  0 12rem 0 0;
+    }
+
+    .destination__info-details{
+        margin: 3.2vw 0 1rem 0;
+        padding: 0 0 1rem 0;
+    }
+
+
+
+
+    #line{
+        width: 80%;
+
+    }
+
+    #flying p{
+        font-size: 1vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.destination__info-list a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 6px;
+}
+
+/* Línea base oculta */
+.destination__info-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  background-color: transparent;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .22s ease, background-color .22s ease;
+}
+
+/* Hover → aqua */
+.destination__info-list a:hover::after {
+  transform: scaleX(1);
+  background-color: rgb(21, 38, 140);
+}
+
+/* Selected → blanco */
+.destination__info-list a.selected::after {
+  transform: scaleX(1);
+  background-color: white;
+}
+

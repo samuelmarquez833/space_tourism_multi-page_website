@@ -1,0 +1,256 @@
+
+@import url('../base/reset.css');
+@import url('../base/base.css');
+
+
+@import url('../components/headerOrNav.css');
+
+
+
+body {
+    background-image: url('../../assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+/************************ESTILOS PARA LA ESTRUCTURA*/
+
+/*MAIN (TODO)*/
+.home__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2.4rem 0 0 0;
+}
+
+/*TEXTO*/
+.home__intro{
+    margin: 0 3.2rem 16rem 3.2rem;
+    min-width: 27rem;
+    max-width: 50rem;
+}
+
+.home__intro * {
+    margin: 0 0 2.6rem 0;
+}
+
+
+
+/************COLORES Y TAMAÑOS DE LOS TEXTOS DE LOS INFOS*/
+
+.home__title{
+    font-family: "Bellefair", serif;
+    font-weight:lighter;
+    font-size: 7.4rem;
+    color: var(--primary-color);
+}
+
+
+.home__title-intro, .home__text{
+    font-family: "Barlow", serif;       
+    color: var(--secondary-color);  
+    font-size: 1.4rem;
+}
+
+.home__text{
+    line-height: 2.4rem;
+}
+
+
+
+
+
+/********************************************/
+
+/*EL BOTON DE EXPLORE*/
+.home__button-container{
+    width: 12rem;
+    height: 12rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__button{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hola{
+    width: 100vw;
+    height: 10px;
+}
+
+
+
+
+
+
+@media (min-width: 768px) { 
+    body {
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+    }
+
+
+    .home__main{
+        margin: 12vh 0 0 0;
+    }
+
+    .home__intro{
+        margin: 0 0 8vh 0;
+    }
+
+
+
+    /* Y TAMAÑOS DE LOS TEXTOS DE LOS INFOS*/
+
+    .home__title{
+        font-size: 14.2rem;
+    }
+
+    .home__title-intro{
+        font-size: 2.2rem;
+    }
+
+    .home__text{
+        font-size: 1.6rem;
+    }
+
+
+    /*PARTE DEL BOTON*/
+
+
+    .home__button-container{
+        width: 26rem;
+        height: 26rem;
+        margin-bottom: 12rem;
+    }
+
+    .home__button{
+        font-size: 2.2vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+
+    body {
+        background-image: url('../../assets/home/background-home-desktop.jpg');
+        min-height: 100vh;         
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .main__header {
+        flex-shrink: 0;
+    }
+
+    .home__main{
+        margin: auto 0 1vh 10vw;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+
+    .home__intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        min-width: 50vw;
+        max-width: 50vw;
+        
+    }
+
+
+    .home__explore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+
+  
+
+
+
+
+    /* Y TAMAÑOS DE LOS TEXTOS DE LOS INFOS*/
+
+    .home__title{
+        font-size: 8.2vw;
+    }
+    
+    .home__title-intro{
+        font-size: 1.6vw;
+    }
+
+    .home__text{
+        font-size: 1.2vw;
+        line-height: 3.4vh;
+    }
+
+
+
+    /*PARTE DEL BOTON*/
+
+    .home__button{
+        font-size: 2.2vw;
+    }
+    
+
+    .home__button-container{
+        width: 18vw;
+        height: 18vw;
+        margin-bottom: 0;
+    }
+
+
+
+
+
+}

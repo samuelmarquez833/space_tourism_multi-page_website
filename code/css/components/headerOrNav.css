@@ -1,0 +1,222 @@
+
+
+
+
+.main__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.2rem;
+}
+
+.main__nav {
+    display: none;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.main__nav.active {
+/*    display: block;
+    position: absolute;
+    background-color: rgb(21, 24, 62);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;*/
+
+      display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(30, 31, 53);
+  z-index: 1000;
+    
+}
+
+.main__close {
+  display: none;
+}
+
+/* En pantallas pequeñas (<768px) la X se muestra cuando el menú está activo */
+@media (max-width: 767px) {
+  .main__nav.active .main__close {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    line-height: 1;
+  }
+}
+
+.main__nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5.4rem; 
+    padding: 3.2rem 2.4rem;
+}
+
+.main__nav-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2.4rem;
+}
+
+
+
+
+button[aria-label="Toggle navigation"] {
+    background-color:transparent;
+    border: none;
+}
+
+.main__nav-link {
+  position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-bottom: 8px;
+  display: inline-block; /* <--- Esto es clave */
+}
+
+.main__nav-link.selected::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+
+    .main__nav { 
+        display: block;
+        background-color: rgb(255, 255, 255, 0.075);
+        width: 80vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header img{
+        margin: 0 auto;
+    }
+
+    button[aria-label="Toggle navigation"] {
+        display: none; 
+    }
+
+    .main__header{
+        padding: 0;
+        margin: 0;
+    }
+
+    .main__nav-list{
+        flex-direction: row;
+        gap: 5.8rem;
+    }
+
+    
+    .main__nav-link{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+
+    .main__nav { 
+        display: block;
+        background-color: rgb(255, 255, 255, 0.1);
+        width: 55vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    header img{
+        margin: 0 0 0 8.5rem;
+    }
+
+
+    .main__header{
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 0;
+    }
+
+
+
+    .main__nav-list{
+        flex-direction: row;
+        gap: 6.4rem;
+    }
+
+    
+    .main__nav-link{
+        font-size: 1.6rem;
+    }
+
+
+    
+
+}

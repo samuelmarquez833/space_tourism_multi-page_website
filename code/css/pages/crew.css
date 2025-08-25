@@ -1,0 +1,330 @@
+@import url('../base/reset.css');
+@import url('../base/base.css');
+
+
+@import url('../components/headerOrNav.css');
+
+
+body {
+    background-image: url('../../assets/crew/background-crew-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*IMAGEN DE LA SECCION*/
+.crew__image{
+    width: 70vw;
+}
+
+.crew_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4.8vh 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LA ESTRCUTRURA*/
+
+.crew__member-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+    width: 80vw;
+    margin: 0 0 6.2vh 0;
+}
+
+.crew__member-role, .crew__member-name {  
+    margin: 2vh 0 ;
+}
+
+/***************** los colores y tamaños de las palabras*/
+
+
+.crew__member-name{
+    font-family: "Bellefair", serif;
+    font-weight:lighter;
+    font-size: 4.2rem;
+    color: var(--primary-color);
+}
+
+.crew__member-description{
+    line-height: 2.4rem;
+}
+
+.crew__member-role, .crew__member-description{
+    font-family: "Barlow", serif;
+    color: var(--secondary-color);   
+}
+
+.crew__member-role{
+    font-size: 2rem;
+}
+
+
+.crew__member-description{
+    font-size: 1.4rem;
+    margin: 2vh 0 0 0;
+}
+
+
+
+/*****************************LA LISTA*/
+.crew__list {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 1rem;               
+  list-style: none;        
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+}
+
+.crew__list li {
+  margin: 0;
+  padding: 0;
+}
+
+.crew__list a {
+  text-decoration: none;   
+  color: inherit;          
+  display: inline-block;   
+}
+
+.crew__list-member {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgb(95, 87, 87);
+}
+
+.selectedList{
+background-color: rgb(255, 255, 255);
+}
+
+/*el flontante*/
+
+#flying{
+    position: relative;
+    top: 4vh;
+    text-align: center;
+    width: 100%;
+}
+
+#flying p{
+    color: var(--primary-color);
+    font-family: "Barlow Condensed", serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+    body {
+        background-image: url('../../assets/crew/background-crew-tablet.jpg');
+    }
+
+
+    .crew__image{
+        width: 38rem;
+    }
+
+    .crew__member-info{
+        width: 58vw;
+        margin: 0 0 8rem 0;
+    }
+
+    .crew_main{
+        margin: 6.4rem 0 0 0;
+    }
+
+    #flying{
+        top: 6rem;
+        width: 40%;
+        margin: 0 0 0 7vw;
+        text-align: left;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url('../../assets/crew/background-crew-desktop.jpg');
+        min-height: 100vh;         
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .main__header {
+        flex-shrink: 0;
+    }
+
+
+
+    .crew_main{
+        margin: auto 0 4vh 10vw;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+
+
+
+    .crew__image{
+        width: 40vh;
+    }
+
+    .crew__image-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;    
+    }
+
+
+        
+
+    .crew__member-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        width: 50vw;
+        margin: 0;
+        padding: 0;
+    }   
+    
+
+
+
+
+
+
+    
+    .crew__list {
+        justify-content:flex-start; /* Centrado horizontal */
+        align-items: center;     /* Centrado vertical (si el contenedor tiene altura) */
+        margin: 10vh 0 0 0;
+    }
+
+
+    #flying{
+        margin: 0 0 0 10vw;
+    }
+
+
+
+
+
+
+
+
+        
+    .crew__member-name{
+        font-size: 3.6vw;
+    }
+
+    .crew__member-description{
+        line-height: 1.8vw;
+    }
+
+    .crew__member-role{
+        font-size: 2vw;
+    }
+
+
+    .crew__member-description{
+        font-size: 1vw;
+        margin: 2vh 0 0 0;
+    }
+
+
+    .crew__list-member {
+        width: 1vw;
+        height: 1vw;
+
+    }
+
+
+
+}
+
+
+
+
+/* Hover (que cambie el fondo) */
+.crew__list-member:hover {
+  background-color: rgb(21, 38, 140);
+}

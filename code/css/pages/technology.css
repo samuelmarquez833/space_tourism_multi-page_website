@@ -1,0 +1,324 @@
+@import url('../base/reset.css');
+@import url('../base/base.css');
+
+
+@import url('../components/headerOrNav.css');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-image: url('../../assets/technology/background-technology-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;    
+}
+
+/*ESTILOS DE LOS TEXTOS*/
+.text__title{
+    font-family: "Bellefair", serif;
+    font-weight:lighter;
+    font-size: 3.6rem;
+    color: var(--primary-color);
+}
+
+.text__subtitle, .text__paragraph{
+    font-family: "Barlow", serif;       
+    color: var(--secondary-color);  
+    font-size: 1.4rem;
+}
+
+.text__paragraph{
+    line-height: 2.4rem;
+}
+
+
+/*  LISTA */
+
+.info__carrousel {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.carrousel__list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carrousel__list-elemnt {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid rgba(255, 255, 255, 0.25); 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+/*EL FLOTANTE*/
+
+#flying{
+    position: relative;
+    top: 3.4vh;
+    text-align: center;
+    width: 100%;
+}
+
+#flying p{
+    color: var(--primary-color);
+    font-family: "Barlow Condensed", serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;;
+}
+
+
+/*ESTILOS DE LA ESTRUCTURA*/
+.tecnology__image{
+    width: 100vw;
+    height: 32vh;
+    object-fit: cover;
+}
+
+
+.tecnology__main{
+    margin: 12vh 0 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__text{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info__text *{
+    margin: 2vh 0 0 0;
+}
+
+
+/* Hover → fondo aqua, texto negro */
+.carrousel__list-elemnt:hover {
+  background-color: aqua;
+  color: black;
+}
+
+/* Selected → fondo blanco, texto negro */
+.carrousel__list-elemnt.selected {
+  background-color: white;
+  color: black;
+}
+
+/* Para que el hover no cambie el color de un seleccionado */
+.carrousel__list-elemnt.selected:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    body{
+        background-image: url('../../assets/technology/background-technology-tablet.jpg'); 
+    }
+
+    /*CARROUSEL*/
+
+    .info__carrousel {
+        margin: 4.2rem 0 3.2rem 0;
+    }
+
+    /*ANCHO DEL TEXTO PRINCIPAL*/
+    .info__text{
+        width: 80vw;
+    }
+
+    /*ESTILOS DE LOS TEXTOS*/
+    .text__title{
+        font-size: 4.8rem;
+    }
+
+    .text__subtitle {
+        font-size: 2.2rem;
+    }
+    .text__paragraph{
+        font-size: 2rem;
+    }
+
+    /*EL FLOTANTE*/
+    #flying{
+        width: 40%;        
+        margin: 0 0 0 7vw;
+        text-align: left;
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    body{
+        background-image: url('../../assets/technology/background-technology-desktop.jpg'); 
+        min-height: 100vh;         
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .main__header {
+        flex-shrink: 0;
+    }
+
+
+
+    .tecnology__image{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .tecnology__main{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: auto 0 12vh 7vw;
+
+    }
+
+    .tecnology__image-section{
+        width: 50%;
+        display: flex;
+        text-align: right;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .tecnology__info-section{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info__text{
+        width: 30vw;
+        text-align: left;
+    }
+
+    .carrousel__list{
+        flex-direction: column;
+        gap: 3rem;
+        margin: 0 3vw 0 0;
+    }
+
+
+
+
+    /*ESTILOS DE LOS TEXTOS*/
+    .text__title{
+        font-size: 3.4vw;
+    }
+
+    .text__subtitle, .text__paragraph{  
+        font-size: 1.2vw;
+    }
+
+    .text__paragraph{
+        line-height: 2.2vw;
+    }
+
+
+/*
+    .info__carrousel {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    }
+
+    .carrousel__list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+*/
+
+    .carrousel__list-elemnt {
+    width: 6.8vh;
+    height: 6.8vh;
+    font-size: 1vw;
+    }
+
+    .carrousel__list {
+        gap: 1vw;
+    }
+
+
+
+
+    /*EL FLOTANTE*/
+
+    #flying{
+        margin: 0 0 0 16vw;
+
+    }
+    #flying p{
+        font-size: 1vw;
+    }
+   
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
