@@ -13,7 +13,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -28,11 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-./screenshot.jpg
+![Space tourism multi-page website index image](/preview.png)
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://github.com/samuelmarquez833/space_tourism_multi-page_website
 - Live Site URL: 
 
 ## My process
@@ -58,8 +57,4 @@ Users should be able to:
 - Website - https://samuelmarquez833.github.io/portfolio/
 - Frontend Mentor - https://www.frontendmentor.io/profile/samuelmarquez833
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
